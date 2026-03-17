@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devops-hubii-ingress
+spec:
+  rules:
+  - host: devops-hubii.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: devops-hubii-service
+            port:
+              number: 80
