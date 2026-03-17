@@ -17,7 +17,7 @@ A proposta foi montar uma estrutura simples, mas organizada, priorizando clareza
 ├── docker/
 │   └── Dockerfile
 │
-├── kubernetes/
+├── k8s/
 │   ├── deployment.yaml
 │   ├── service.yaml
 │   └── ingress.yaml
