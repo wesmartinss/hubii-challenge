@@ -10,15 +10,16 @@ terraform {
 }
 
 provider "aws" {
-  region = var.regiao_aws
+  region = var.aws_region
 }
 
-resource "aws_s3_bucket" "bucket_desafio_hubii" {
-  bucket = var.nome_bucket
+resource "aws_s3_bucket" "desafio_hubii_bucket" {
+  bucket = var.bucket_name
 
   tags = {
-    Name        = var.nome_bucket
-    Environment = var.ambiente
+    Name        = var.bucket_name
+    Environment = var.environment
     Project     = "desafio-hubii"
+    ManagedBy   = "Terraform"
   }
 }

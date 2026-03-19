@@ -1,9 +1,9 @@
-output "nome_bucket" {
-  description = "Nome do bucket S3"
-  value       = aws_s3_bucket.bucket_desafio_hubii.bucket
+output "bucket_name" {
+  description = "Nome do bucket S3 criado"
+  value       = aws_s3_bucket.desafio_hubii_bucket.bucket
 }
 
-output "arn_bucket" {
-  description = "ARN do bucket S3"
-  value       = aws_s3_bucket.bucket_desafio_hubii.arn
+output "bucket_arn" {
+  description = "ARN do bucket S3 criado"
+  value       = aws_s3_bucket.desafio_hubii_bucket.arn
 }
